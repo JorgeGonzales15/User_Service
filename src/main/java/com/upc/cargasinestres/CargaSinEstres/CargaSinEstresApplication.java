@@ -21,8 +21,8 @@ public class CargaSinEstresApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/v1/**")
-						.allowedOrigins("*")
+				registry.addMapping("/**")
+						.allowedOrigins("https://cse-fundamentos.web.app")
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH") // Permitir los métodos necesarios
 						.allowedHeaders("*"); // Permitir todos los encabezados
 			}
